@@ -3,6 +3,23 @@ body {
   background-color:black;
 }
 
+.content {
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  div.contact_desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  div.contact_mobile {
+    display: none;
+  }
+}
+
+
 img {
   display: block;
   margin-left: auto;
@@ -17,8 +34,4 @@ h1 {
 p {
   text-align: center;
   color: white;
-}
-
-div {
-  text-align: center;
 }
