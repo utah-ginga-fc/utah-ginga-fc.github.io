@@ -3,22 +3,19 @@ body {
   background-color:black;
 }
 
-.content {
-  position: relative;
+.fade-in {
+  animation: fadeIn 5s;
 }
 
-@media screen and (max-width: 600px) {
-  div.contact_desktop {
-    display: none;
-  }
+.image-row {
+  display: flex;
+  width: 30%;
 }
 
-@media screen and (min-width: 600px) {
-  div.contact_mobile {
-    display: none;
-  }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
-
 
 img {
   display: block;
