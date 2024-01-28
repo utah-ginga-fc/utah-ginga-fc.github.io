@@ -10,6 +10,9 @@ body {
 .image-row {
   display: flex;
   width: 30%;
+  align-items: center;
+  justify-content: center;
+/*  background-color: #007DB2;*/
 }
 
 @keyframes fadeIn {
@@ -19,8 +22,7 @@ body {
 
 img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+/*  background-color: #007DB2;*/
 }
 
 h1 {
