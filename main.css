@@ -21,9 +21,12 @@ body {
 }
 
 .image-row {
+  /* background-color: #6059B2; */
+  width: 70%;
   display: flex;
   flex-direction: row;
-  /* background-color: #007DB2;  */
+  gap: 2em;
+  justify-content: space-between;
 }
 
 @keyframes fadeIn {
@@ -43,15 +46,16 @@ body {
 }
 
 .img-social {
-  /* background-color: #317562; */
-  max-width: 70%;
+  /* background-color: #317562;  */
+  max-width: 100%;
   height: auto;
 }
 
 a {
+  /* background-color: #606060;  */
   display: flex;
-  justify-content: center;
 }
+
 
 h1 {
   color: white;
