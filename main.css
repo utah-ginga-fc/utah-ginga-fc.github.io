@@ -39,13 +39,12 @@ body {
 .img-logo {
   /* background-color: #2071B2;  */
   max-width: 100%;
-  width: 90%;
   height: auto;
 }
 
 .img-social {
   /* background-color: #317562; */
-  width: 80%;
+  max-width: 70%;
   height: auto;
 }
 
