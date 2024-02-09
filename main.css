@@ -23,8 +23,6 @@ body {
 .image-row {
   display: flex;
   flex-direction: row;
-  gap: 2em;
-  justify-content: space-between;
   /* background-color: #007DB2;  */
 }
 
