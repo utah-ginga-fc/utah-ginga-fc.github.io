@@ -1,0 +1,128 @@
+body {
+  font-family: monaco, Consolas, Lucida Console, monospace;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+fade-in {
+  animation: fadeIn 5s;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+image-row {
+  /* background-color: #6059B2; */
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  max-width: 70%;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+mobile-nav {
+  background: #3c3c3c;
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.link-style {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
+
+a:hover, a:active {
+  color: #dbc00e;
+}
+.img-logo {
+  /* background-color: #2071B2; */
+  width: 100%;
+}
+
+.img-social {
+  /* background-color: #317562;  */
+  width: 100%;
+}
+/* a {
+  display: flex;
+} */
+
+h1 {
+  color: white;
+}
+
+p {
+  /* background-color: #007DB2; */
+  text-align: center;
+  color: white;
+}
+
+.blink {
+  animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  h1 {
+    color: white;
+    font-size: 16px;
+    line-height: 80%;
+  }
+
+  p {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  /* your CSS to target only landscape mobile users */
+    .image-row {
+      width: 60%;
+    }
+  }
