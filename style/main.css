@@ -64,7 +64,7 @@ mobile-nav {
 }
 
 a:hover, a:active {
-  color: #dbc00e;
+  color: #02c166;
 }
 .img-logo {
   /* background-color: #2071B2; */
@@ -93,6 +93,14 @@ p {
   animation: blink 1s steps(1, end) infinite;
 }
 
+.link-style-current {
+  color: #dbc00e;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+}
 @keyframes blink {
   0% {
     opacity: 1;
