@@ -38,10 +38,11 @@ mobile-nav {
   bottom: 0;
   height: 65px;
   width: 100%;
+  gap: 2em;
   display: flex;
   align-items: center;
   color: white;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 @keyframes fadeIn {
@@ -125,6 +126,10 @@ p {
     font-size: 12px;
     text-align: center;
     color: white;
+  }
+
+  mobile-nav { 
+    gap: .5em;
   }
 }
 
