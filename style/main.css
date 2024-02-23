@@ -36,16 +36,30 @@ image-row {
   animation: fadeIn-delay 10s
 }
 
-bottom-nav {
-  background: #3c3c3c;
-  position: fixed;
-  bottom: 0;
+top-nav-bar {
+  font-family: poppins-light;
+  top: 0;
   height: 60px;
+  width: 100%;
+  gap: 5em;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+bottom-nav-bar{
+  display: none;
+  position: fixed;
+  color: white;
+  font-family: poppins-light;
+  bottom: 0;
+  height: 65px;
   width: 100%;
   gap: 2em;
   display: flex;
   align-items: center;
-  color: white;
+  background: #3c3c3c;
   justify-content: center;
 }
 
@@ -57,6 +71,21 @@ bottom-nav {
   text-decoration: none;
   display: flex;
 }
+/* 
+.anchor-bottom-nav {
+
+  background-color: #3c3c3c;
+  border: 2px;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  /* color: white; padding: 5px 11px; border: 2px solid #5a827f; border-radius: 30%; */
+} */
 
 a:hover, a:active {
   color: #02c166;
@@ -90,13 +119,14 @@ iframe {
 .img-social {
   /* background-color: #317562;  */
   width: 100%;
+  max-width: 100px;
 }
 
 h1 {
   color: white;
-  margin-top: 3%;
   font-size: 42px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 h2 {
@@ -230,11 +260,18 @@ p {
 }
 
 /* SCREEN SIZES */
+
+/*DESKTOP*/
+@media only screen and (min-width: 768px) {
+  bottom-nav-bar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   h1 {
     color: white;
     font-size: 24px;
-    margin-top: 5%;
     /* line-height: 80%; */
   }
 
@@ -249,9 +286,15 @@ p {
     color: white;
   }
 
-  bottom-nav { 
+  top-nav-bar{
+    display: none;
+  }
+
+  bottom-nav-bar{
+    display: flex;
     gap: .5em;
   }
+
   .container-logo-video {
     position: relative;
     /* background-color: #6059B2; */
