@@ -292,7 +292,7 @@ p {
 
   bottom-nav-bar{
     display: flex;
-    gap: .5em;
+    gap: 2em;
   }
 
   .container-logo-video {
