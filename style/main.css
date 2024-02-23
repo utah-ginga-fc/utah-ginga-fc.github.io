@@ -41,7 +41,7 @@ top-nav-bar {
   top: 0;
   height: 60px;
   width: 100%;
-  gap: 5em;
+  gap: 3em;
   display: flex;
   align-items: center;
   color: white;
@@ -157,6 +157,14 @@ p {
   display: flex;
 }
 
+.top-img-icon {
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 /* ANIMATIONS */
 
 @keyframes fadeIn {
@@ -291,6 +299,14 @@ p {
     display: none;
   }
 
+  .top-img-icon {
+    /* display: none; */
+    margin: 0;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
   bottom-nav-bar{
     display: flex;
     gap: 2em;
