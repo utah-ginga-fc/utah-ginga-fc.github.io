@@ -158,6 +158,7 @@ p {
 }
 
 .top-img-icon {
+  display: none;
   width: 50px;
   position: absolute;
   top: 0;
@@ -300,7 +301,7 @@ p {
   }
 
   .top-img-icon {
-    /* display: none; */
+    display: inline;
     margin: 0;
     position: relative;
     display: block;
