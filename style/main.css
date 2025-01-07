@@ -84,7 +84,7 @@ bottom-nav-bar{
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  /* color: white; padding: 5px 11px; border: 2px solid #5a827f; border-radius: 30%; */
+  color: white; padding: 5px 11px; border: 2px solid #5a827f; border-radius: 30%;
 } */
 
 a:hover, a:active {

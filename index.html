@@ -26,7 +26,7 @@
   <!-- End Google Tag Manager (noscript) -->
    
   <div style="width: 100%; margin-top: 0; margin-bottom: 0;">
-  <top-nav-bar>
+  <top-nav-bar style="font-family: 'Poppins', sans-serif;">
     <a href="index.html" class="link-style-current">
       HOME 
     </a>|
@@ -48,7 +48,33 @@
   </div>
     <div class="container-logo-video"> 
       <!-- <iframe src="https://fast.wistia.net/embed/iframe/cwpx8sni0c?seo=true&videoFoam=false" title="Uniform Reveal Video" allow="autoplay;" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed"></iframe> -->
-      <iframe src="https://fast.wistia.net/embed/iframe/7dxxn8insi?seo=true&videoFoam=false" title="This is Ginga Futsal Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe>
+        <div style="display: flex; align-items: center; height: 100%;">
+          <button class="carousel-button prev" onclick="prevVideo()" style="font-size: 2em; margin-left: 5px; margin-right: 5px;">&#10094;</button>
+          <iframe id="wistia_player" src="https://fast.wistia.net/embed/iframe/n7js3zw57w?seo=true&videoFoam=false" title="This is Ginga Futsal Video" allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" msallowfullscreen width="100%" height="100%"></iframe>
+          <button class="carousel-button next" onclick="nextVideo()" style="font-size: 2em; margin-right: 5px; margin-left: 5px;">&#10095;</button>
+        </div>
+
+
+      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+      <script>
+        var videoIds = ["n7js3zw57w", "7dxxn8insi"]; // Add more video IDs as needed
+        var currentIndex = 0;
+
+        function updateVideo() {
+          var player = document.getElementById('wistia_player');
+          player.src = "https://fast.wistia.net/embed/iframe/" + videoIds[currentIndex] + "?seo=true&videoFoam=false";
+        }
+
+        function prevVideo() {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : videoIds.length - 1;
+          updateVideo();
+        }
+
+        function nextVideo() {
+          currentIndex = (currentIndex < videoIds.length - 1) ? currentIndex + 1 : 0;
+          updateVideo();
+        }
+      </script>
       <img class="img-logo" src="images/ginga_logo.webp" alt="Team logo">
 
     </div>
@@ -65,7 +91,7 @@
           alt="youtube account" /></a>
       <a href="mailto:info@utahgingafc.com"><img class="img-social" src="images/envelope.webp" alt="team email" /></a>
     </image-row>
-    <bottom-nav-bar>
+    <bottom-nav-bar style="font-family: 'Poppins', sans-serif;">
       <a href="index.html" class="link-style-current">
         HOME 
       </a>|
