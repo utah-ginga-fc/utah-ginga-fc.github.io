@@ -1,36 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Tryouts</title>
-
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tryouts - Utah Ginga FC</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K69V3S8K');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/main.css">
 </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K69V3S8K"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<body class="container">
-  <nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="images/ginga_logo.webp" alt="Utah Ginga FC logo">
+        <span>Utah Ginga FC</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="tryouts.html">Tryouts</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="tryouts.html">Tryouts</a>
   </nav>
-  <h1>TRYOUTS</h1>  
 
-  <p>
-    <span class="blink">COMING SOON</span>
-  </p>
+  <section class="page-header">
+    <h1>Tryouts</h1>
+    <p>Show us your ginga. Join Utah's competitive futsal club.</p>
+  </section>
 
-  <bottom-nav>
-    <a href="index.html" class="link-style">
-      HOME 
-    </a> |
-    <a href="tryouts.html" class="link-style-current">
-        TRYOUTS
-    </a>|
-    <a href="about-us.html" class="link-style">
-        ABOUT US
-    </a>
-    |
-    <a href="sponsors.html" class="link-style">
-        SPONSORS
-    </a>
-  </bottom-nav>
+  <section class="section">
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon">&#128101;</div>
+        <h3>Who Can Try Out?</h3>
+        <p>We welcome high school-aged players (14-18) who are passionate about futsal and ready to compete. All skill levels are encouraged to attend.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#9889;</div>
+        <h3>What to Expect</h3>
+        <p>Tryouts include small-sided games, technical drills, and positional play. We look for creativity, effort, and a love for the game above all.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#128197;</div>
+        <h3>Upcoming Dates</h3>
+        <p>Tryout dates for the next season will be announced soon. Follow us on Instagram to be the first to know.</p>
+        <div class="text-center mt-lg">
+          <span class="badge">Dates Coming Soon</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-card reveal">
+      <h3>Interested in Joining?</h3>
+      <p>Drop us an email to express your interest, or follow us on Instagram for tryout announcements and updates.</p>
+      <a href="mailto:info@utahgingafc.com?subject=Tryout%20Interest" class="btn btn-gold">Email Us</a>
+      <a href="https://www.instagram.com/utah_ginga_fc" class="btn btn-outline" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Utah Ginga Futsal Club. <a href="mailto:info@utahgingafc.com">info@utahgingafc.com</a></p>
+  </footer>
+
+  <script src="./script/main.js"></script>
 </body>
-
 </html>

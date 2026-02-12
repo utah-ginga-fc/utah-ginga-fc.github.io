@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>About us</title>
-
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - Utah Ginga FC</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K69V3S8K');</script>
+  <!-- End Google Tag Manager -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/main.css">
 </head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K69V3S8K"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<body class="container">
-  <div style="width: 100%;">
-    <top-nav-bar style="font-family: 'Poppins', sans-serif;">
-      <a href="index.html" class="link-style">
-        HOME 
-      </a>|
-      <a href="about.html" class="link-style-current">
-          ABOUT US
-      </a>|
-      <a href="sponsors.html" class="link-style">
-          SPONSORS
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">
+        <img src="images/ginga_logo.webp" alt="Utah Ginga FC logo">
+        <span>Utah Ginga FC</span>
       </a>
-    </top-nav-bar>
-    <hr style="height:1px;border:none; color: white; background-color: white;">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="tryouts.html">Tryouts</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-    <h1>ABOUT US</h1> 
-    <img src="images/ginga_logo.webp" alt="Team logo" width="100" height="100">
-  <div style="line-height: 1.6; max-width: 700px; margin-left: 20px; margin-right: 20px;">
-      <p>
-        <strong>It’s no coincidence that futsal is the first game many soccer superstars begin their journey with.</strong> 
-        The fast-paced nature of the game, combined with the high number of touches per minute, fosters accelerated growth in 
-        technical skills and creativity. These boys have developed a deep love for futsal and are passionate about promoting a 
-        sport that fits perfectly with Utah’s cold seasons.
-      </p>
-    
-      <p>
-        Out of this passion, <strong>Utah Ginga</strong> was born—with a mission to offer quality futsal opportunities at very 
-        low costs. Through their creativity and determination, these boys have found innovative ways to keep the program 
-        affordable. However, they would greatly benefit from access to better practice facilities and occasional sessions with 
-        more experienced coaches. They work tirelessly to support their passion, but at this stage in their lives, most of their 
-        financial resources are dedicated to religious missions and furthering their education.
-      </p>
-    
-      <p>
-        If you feel inspired to support their cause and help them grow, here’s the link to make a donation. Your contribution can 
-        make a meaningful impact in helping these boys continue their futsal journey and share their love for the game with the 
-        community.
-      </p>
-    
-      <form action="https://www.paypal.com/donate" method="post" target="_top" style="text-align: center; margin-top: 40px;">
+  </header>
+
+  <nav class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="tryouts.html">Tryouts</a>
+  </nav>
+
+  <section class="page-header">
+    <h1>About Us</h1>
+    <p>Learn about our passion for futsal and the ginga spirit.</p>
+  </section>
+
+  <section class="section">
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="card-icon">&#9917;</div>
+        <h3>The Beautiful Game</h3>
+        <p>It's no coincidence that futsal is the first game many soccer superstars begin their journey with. The fast-paced nature of the game, combined with the high number of touches per minute, fosters accelerated growth in technical skills and creativity.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#10024;</div>
+        <h3>The Ginga Spirit</h3>
+        <p>These boys have developed a deep love for futsal and are passionate about promoting a sport that fits perfectly with Utah's cold seasons. Out of this passion, Utah Ginga was born.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">&#127942;</div>
+        <h3>Our Mission</h3>
+        <p>We offer quality futsal opportunities at very low costs. Through creativity and determination, our players have found innovative ways to keep the program affordable while pursuing excellence on the court.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="donate-card reveal">
+      <h3>Support Our Journey</h3>
+      <p>Your contribution can make a meaningful impact in helping these boys continue their futsal journey and share their love for the game with the community.</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
         <input type="hidden" name="hosted_button_id" value="TPAQGQARLUWKW" />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" 
-               name="submit" title="PayPal - The safer, easier way to pay online!" 
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+               name="submit" title="PayPal - The safer, easier way to pay online!"
                alt="Donate with PayPal button" style="cursor: pointer;" />
         <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
       </form>
     </div>
+  </section>
 
-  <bottom-nav-bar style="font-family: 'Poppins', sans-serif;">
-    <a href="index.html" class="link-style">
-      HOME 
-    </a>|
-    <a href="about.html" class="link-style-current">
-        ABOUT US
-    </a>|
-    <a href="sponsors.html" class="link-style">
-        SPONSORS
-    </a>
-  </bottom-nav-bar>
+  <footer class="site-footer">
+    <p>&copy; 2025 Utah Ginga Futsal Club. <a href="mailto:info@utahgingafc.com">info@utahgingafc.com</a></p>
+  </footer>
+
+  <script src="./script/main.js"></script>
 </body>
-
 </html>
