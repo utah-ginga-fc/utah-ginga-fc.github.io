@@ -2,7 +2,9 @@
    CSS Reset & Custom Properties
    =========================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,10 +12,14 @@
 
 :root {
   /* Colors */
-  --bg-primary: #1A1A2E;
-  --bg-surface: #16213E;
-  --gold: #DBC00E;
-  --green: #1B9B5E;
+  --bg-primary: #050505;
+  /* Slick Dark/Black Background */
+  --bg-surface: #121212;
+  /* Modern Dark Surface */
+  --gold: #FFDF00;
+  /* Brazil Yellow */
+  --green: #009C3B;
+  /* Brazil Green */
   --text-primary: #F5F5F5;
   --text-muted: #A0A0B0;
   --border-subtle: rgba(255, 255, 255, 0.08);
@@ -35,7 +41,7 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.3);
-  --shadow-hover: 0 8px 32px rgba(219, 192, 14, 0.15);
+  --shadow-hover: 0 8px 32px rgba(255, 223, 0, 0.15);
   --transition: 0.3s ease;
 }
 
@@ -80,7 +86,10 @@ ul {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(26, 26, 46, 0.85);
+  background: rgba(5, 5, 5, 0.85);
+  /* Darker slick header */
+  /* Deep Blue with opacity */
+  /* Deep Blue with opacity */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
@@ -233,7 +242,7 @@ ul {
 .hero {
   text-align: center;
   padding: var(--space-xl) var(--space-md) var(--space-lg);
-  background: radial-gradient(ellipse at 50% 0%, rgba(22, 33, 62, 0.8) 0%, var(--bg-primary) 70%);
+  background: radial-gradient(circle at center, rgba(0, 156, 59, 0.15) 0%, var(--bg-primary) 70%);
 }
 
 .hero-logo {
@@ -299,10 +308,10 @@ ul {
 }
 
 .btn-gold:hover {
-  background: #c5ab0c;
+  background: #e6c800;
   color: var(--bg-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(219, 192, 14, 0.3);
+  box-shadow: 0 4px 16px rgba(255, 223, 0, 0.3);
 }
 
 .btn-outline {
@@ -323,10 +332,10 @@ ul {
 }
 
 .btn-green:hover {
-  background: #17864f;
+  background: #007a2e;
   color: var(--text-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(27, 155, 94, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 156, 59, 0.3);
 }
 
 /* ===========================
@@ -368,7 +377,8 @@ ul {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
+  padding-top: 56.25%;
+  /* 16:9 */
   background: var(--bg-surface);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -444,7 +454,8 @@ ul {
 
 .card {
   background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(0, 156, 59, 0.3);
+  /* Subtle green border */
   border-radius: var(--radius-md);
   padding: var(--space-lg);
   transition: all var(--transition);
@@ -452,8 +463,9 @@ ul {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
-  border-color: rgba(219, 192, 14, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 156, 59, 0.1);
+  border-color: var(--green);
+  /* Bright green on hover */
 }
 
 .card-icon {
@@ -498,7 +510,7 @@ ul {
 
 /* Tier highlight */
 .card.tier-gold {
-  border-color: rgba(219, 192, 14, 0.3);
+  border-color: rgba(255, 223, 0, 0.3);
   position: relative;
 }
 
@@ -545,12 +557,13 @@ ul {
   text-decoration: none;
   transition: all var(--transition);
   min-width: 140px;
+  border: 1px solid rgba(0, 156, 59, 0.3);
 }
 
 .social-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-hover);
-  border-color: rgba(219, 192, 14, 0.2);
+  border-color: rgba(255, 223, 0, 0.2);
 }
 
 .social-card img {
@@ -621,7 +634,7 @@ ul {
   line-height: 1.7;
 }
 
-.cta-card .btn + .btn {
+.cta-card .btn+.btn {
   margin-left: var(--space-xs);
 }
 
@@ -650,7 +663,7 @@ ul {
 .page-header {
   text-align: center;
   padding: var(--space-xl) var(--space-md) var(--space-lg);
-  background: radial-gradient(ellipse at 50% 0%, rgba(22, 33, 62, 0.8) 0%, var(--bg-primary) 70%);
+  background: radial-gradient(circle at center, rgba(0, 156, 59, 0.15) 0%, var(--bg-primary) 70%);
 }
 
 .page-header h1 {
@@ -756,7 +769,7 @@ ul {
     width: 100%;
   }
 
-  .cta-card .btn + .btn {
+  .cta-card .btn+.btn {
     margin-left: 0;
     margin-top: var(--space-sm);
   }
