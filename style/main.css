@@ -207,7 +207,8 @@ ul {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(26, 26, 46, 0.97);
+  background: rgba(5, 5, 5, 0.97);
+  /* Darker slick mobile menu */
   z-index: 150;
   flex-direction: column;
   align-items: center;
