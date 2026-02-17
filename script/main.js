@@ -79,3 +79,12 @@ function nextVideo() {
 
 // Initialize dots on load
 document.addEventListener('DOMContentLoaded', updateDots);
+
+// Tournament overlay dismiss
+const overlayDismiss = document.getElementById('overlayDismiss');
+const tournamentOverlay = document.getElementById('tournamentOverlay');
+if (overlayDismiss && tournamentOverlay) {
+  overlayDismiss.addEventListener('click', () => {
+    tournamentOverlay.classList.add('dismissed');
+  });
+}
