@@ -500,6 +500,13 @@ ul {
   background: rgba(255, 223, 0, 0.04);
 }
 
+.tournament-highlights .location-item {
+  flex-basis: 100%;
+  max-width: fit-content;
+  justify-content: center;
+  margin-top: 4px;
+}
+
 .highlight-icon {
   font-size: 1rem;
 }
